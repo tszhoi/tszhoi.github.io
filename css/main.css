@@ -14,15 +14,16 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #333333;
 }
 a:hover {
     text-decoration: underline;
-    colour:#292D8D;
+    colour: #292D8D;
 }
 h1 {
     font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: #333;
 }
 p {
     font-size: 1.5em;
