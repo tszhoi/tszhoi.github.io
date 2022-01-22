@@ -1,10 +1,10 @@
 body {
   margin: 60px auto;
   width: 70%;
-  background: linear-gradient(-45deg, #fff5f2, #e7803c, #23a6d5, #23d5ab);
+  background: linear-gradient(to right top, #2f7ce1,#2fabe1,#e5e,#dda919,#fddd10);
   background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-  animation: gradient 15s ease infinite;
+  -webkit-animation: gradient 20s ease infinite;
+  animation: gradient 20s ease infinite;
 }
 
 @-webkit-keyframes gradient {
