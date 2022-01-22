@@ -3,8 +3,8 @@ body {
   width: 70%;
   background: linear-gradient(-45deg, #fff5f2, #e7803c, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  -webkit-animation: gradient 35s ease infinite;
-  animation: gradient 35s ease infinite;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
 }
 
 @-webkit-keyframes gradient {
@@ -15,7 +15,7 @@ body {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 30%;
+    background-position: 0% 50%;
   }
 }
 
