@@ -47,7 +47,7 @@ footer ul {
   font-size: 12px;
   padding: 0px;
   list-style: none;
-  color: #ffffff;
+  color: #667085;
 }
 
 nav ul li,
@@ -77,6 +77,14 @@ h1 {
   margin-bottom: 0px;
   margin-left: 8px;
 }
+h2 {
+  font-size: 20px;
+  font-family: "Inter", "Sans-Serif";
+  color: #041e3a;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
 p {
   font-size: 17px;
   line-height: 24px;
@@ -129,7 +137,21 @@ title {
 
 .hey {
   margin-bottom: 32px;
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
+.section {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+ul.blog {
+  list-style: none;
+  padding: 0px;
+  font-size: 17px;
+}
+
+ul.blog li {
+  margin-top: 10px;
+}
