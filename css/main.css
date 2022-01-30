@@ -1,5 +1,5 @@
 body {
-  font-family: "Inter", "Sans-Serif";
+  font-family: "Helvetica", "Arial", "Sans-Serif";
   margin: 60px auto;
   width: 70%;
   background-color: rgb(248, 248, 238);
@@ -34,7 +34,7 @@ body {
 }
 
 nav ul {
-  font-family: "Inter", "Sans-Serif";
+  font-family: "Helvetica", "Arial", "Sans-Serif";
   padding: 0px;
   list-style: none;
   font-weight: bold;
@@ -43,7 +43,7 @@ nav ul {
   font-size: 24px;
 }
 footer ul {
-  font-family: "Inter", "Sans-Serif";
+  font-family: "Helvetica", "Arial", "Sans-Serif";
   font-size: 12px;
   padding: 0px;
   list-style: none;
@@ -70,7 +70,7 @@ h1 {
   display: inline-block;
   vertical-align: middle;
   font-size: 42px;
-  font-family: "Inter", "Sans-Serif";
+  font-family: "Helvetica", "Arial", "Sans-Serif";
   color: #041e3a;
   font-weight: 700;
   margin-top: 12px;
@@ -79,7 +79,7 @@ h1 {
 }
 h2 {
   font-size: 20px;
-  font-family: "Inter", "Sans-Serif";
+  font-family: "Helvetica", "Arial", "Sans-Serif";
   color: #041e3a;
   font-weight: 500;
   margin-bottom: 10px;
