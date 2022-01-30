@@ -1,7 +1,9 @@
 body {
+  font-family: "Inter", "Sans-Serif";
   margin: 60px auto;
   width: 70%;
-  background: linear-gradient(to right top, #2f7ce1,#2fabe1,#e5e,#dda919,#fddd10);
+  background-color: rgb(248, 248, 238);
+  /* background: linear-gradient(to right top, #2f7ce1,#2fabe1,#e5e,#dda919,#fddd10); */
   background-size: 400% 400%;
   -webkit-animation: gradient 20s ease infinite;
   animation: gradient 20s ease infinite;
@@ -31,52 +33,61 @@ body {
   }
 }
 
-nav ul{ 
-    font-family: "Helvetica", "Arial", "Sans-Serif";
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: auto;
-    font-size: 24px;
-}
-footer ul {
-  font-family: "Helvetica", "Arial", "Sans-Serif";
+nav ul {
+  font-family: "Inter", "Sans-Serif";
   padding: 0px;
   list-style: none;
   font-weight: bold;
+  color: #333;
+  margin-bottom: auto;
+  font-size: 24px;
+}
+footer ul {
+  font-family: "Inter", "Sans-Serif";
+  font-size: 12px;
+  padding: 0px;
+  list-style: none;
   color: #ffffff;
 }
+
 nav ul li,
 footer ul li {
   display: inline;
   margin-right: 32px;
-  font-weight: 100;
+  font-weight: 300;
 }
+
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #667085;
 }
+
 a:hover {
-  color: #d6d6d6;
+  text-decoration: none;
+  color: #333333;
 }
 h1 {
+  display: inline-block;
+  vertical-align: middle;
   font-size: 42px;
-  font-family: "Helvetica", "Arial", "Sans-Serif";
-  color: #f9f9f9;
+  font-family: "Inter", "Sans-Serif";
+  color: #041e3a;
   font-weight: 700;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  margin-left: 8px;
 }
 p {
-  font-size: 1.5em;
-  line-height: 1.4em;
-  color: #333;
+  font-size: 17px;
+  line-height: 24px;
+  color: #667085;
+  margin: auto;
 }
 footer {
   border-top: 1px solid #d5d5d5;
-  font-size: 0.8em;
+  font-size: 12px;
   margin-left: auto;
+  width: 100%;
 }
 
 ul.posts {
@@ -89,5 +100,36 @@ ul.posts li {
 }
 
 title {
-    color:black;
+  color: black;
 }
+
+.FHlink {
+  font-weight: 600;
+  color: #00a6a8;
+}
+
+.mauxlink {
+  font-weight: 600;
+  color: #dabc12;
+}
+
+.JPlink {
+  font-weight: 600;
+  color: #292d8d;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.intro {
+  margin-bottom: 30px;
+  max-width: 70%;
+}
+
+.hey {
+  margin-bottom: 32px;
+  display:flex;
+  align-items: center;
+}
+
