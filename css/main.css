@@ -198,6 +198,10 @@ h1.CardTitle {
   margin: auto;
 }
 
+.CardContent {
+  color: #ffffff;
+}
+
 .description {
   padding: 20px;
   position: relative;
