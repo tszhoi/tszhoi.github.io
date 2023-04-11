@@ -79,7 +79,8 @@ h1 {
   margin-bottom: 0px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 17px;
+  line-height: 28px;
   font-family: "Helvetica", "Arial", "Sans-Serif";
   color: #041e3a;
   font-weight: 500;
