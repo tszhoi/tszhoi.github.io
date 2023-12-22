@@ -34,7 +34,7 @@ footer ul li {
 
 a {
   text-decoration: none;
-  color: #667085;
+  color: #272624;
 }
 
 a:hover {
@@ -117,7 +117,7 @@ ul.blog {
 
 ul.blog li {
   margin-top: 14px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .blog-card {
