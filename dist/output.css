@@ -633,12 +633,32 @@ video {
   height: 6rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-\[96px\] {
+  height: 96px;
+}
+
 .w-24 {
   width: 6rem;
 }
 
 .w-40 {
   width: 10rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.min-w-\[160px\] {
+  min-width: 160px;
 }
 
 .max-w-screen-md {
@@ -810,4 +830,14 @@ video {
 .hover\:text-slate-600:hover {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 640px) {
+  .sm\:h-24 {
+    height: 6rem;
+  }
+
+  .sm\:w-40 {
+    width: 10rem;
+  }
 }
