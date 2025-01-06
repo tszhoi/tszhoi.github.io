@@ -717,6 +717,10 @@ video {
   max-width: 768px;
 }
 
+.max-w-\[240px\] {
+  max-width: 240px;
+}
+
 .list-disc {
   list-style-type: disc;
 }
