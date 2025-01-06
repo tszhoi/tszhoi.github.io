@@ -6,7 +6,13 @@ module.exports = {
     "./components/**/*.html", // Add paths for other directories if needed
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        highlight: {
+          blue: "#2C2CFF"
+        }
+      }
+    },
   },
   plugins: [],
 };

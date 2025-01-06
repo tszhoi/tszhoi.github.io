@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Title | Lee's Portfolio</title>
+    <meta name="description" content="A detailed blog post about [topic].">
+    <meta property="og:image" content="images/key-visual.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class=" text-slate-800 container mx-auto max-w-screen-md px-4 py-8">
+        <!-- Blog Content -->
+        <article class="mt-40">
+
+            <p class="text-slate-600 text-base mt-2 mb-3">Jan 24, 2024</p>
+            <!-- Blog Title -->
+            <h1 class="text-3xl font-medium leading-snug" >Scaling Vidyard Home Dashboard for all roles and tiers</h1>
+            
+            <!-- Small Header -->
+            <p class="text-slate-600 text-base mb-6 mt-1"> Working with 6 devs as a Sr. Product Designer at Vidyard. Turning an experiment into a long-term product presence. Improving the overall experience and 2x the new user activation metric.</p>
+
+            <!-- Key Visual -->
+            <figure class="mb-6">
+                <img src="images/vyblog/keyvisual.png" alt="Key Visual for the Blog" class="rounded-lg object-cover w-full h-100">
+            </figure>
+
+            <!-- Blog Content -->
+            <div class="prose prose-slate max-w-none">
+
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">Context</h2>
+
+                <p class="mb-6">In early 2024, we launched Vidyard Home as an experiment for the Free workspace tier, aiming to test <span class="text-highlight-blue"> how a centralised starting point could enhance user engagement. </span> Despite being built and shipped in just 6 short weeks, the experiment achieved a<span class="text-highlight-blue"> 12% improvement in retention</span>, showcasing its potential impact. </p>
+                      
+                <p class="mb-10"> As a video recording tool for B2B sales, Vidyard serves a diverse user base, from individual 
+                  Free and Pro accounts to large-scale Plus and Enterprise teams. Building on the experiment’s success, 
+                  we were on a mission to design a scalable, holistic experience that <span class="text-highlight-blue">shows the right content to the 
+                  right user at the right time</span>—supporting users from their first sign-up to the “aha moment” of becoming deeply engaged customers.</p>
+                
+                 <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">Zooming Out Before Moving Forward</h2>
+                <p>While the experimental MVP design had proven effective, scaling Vidyard Home required addressing a series of broader questions as it is longer serve one type of customers:</p>
+                <figure class="mb-6 mt-6">
+                  <img src="images/vyblog/visual2.png" alt="Key Visual for the Blog" class="rounded-lg object-cover w-full h-100">
+              </figure>
+              
+                <ul class="list-disc pl-6 text-slate-800 font-semibold mt-6">
+                    <li class="mb-2">Who are we designing for? What are their daily workflows, and how does Vidyard fit in?</li>
+                    <li class="mb-2">Where are they in their engagement cycle? What’s the key action we want them to take next?</li>
+                    <li class="mb-2">What’s the purpose of each component? How should it guide users through Vidyard’s ecosystem?</li>
+                    <li class="mb-2">What does the data and feedback tell us? What opportunities for improvement have emerged?</li>
+                    <li class="mb-2">What’s our timeline and scope? How can we deliver effectively while mitigating risks?</li>
+                </ul>
+                <p class="mb-10 mt-6"> Returning to the drawing board, we created flow charts and mapped out user journeys to ensure every aspect of the Home page was purposeful, impactful and scalable. </p>
+
+                <!-- Solution -->
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">Overcoming Challenges</h2>
+                <p class="mb-6 mt-6">The primary challenge was designing a centralised experience that seamlessly catered to <span class="text-highlight-blue"> both self-serve small teams and complex, multi-layered enterprise workspaces,</span> each with distinct systems and setups.
+                </p>
+                <p class="mb-6"> This challenge was further heightened by Vidyard’s evolution into a multi-product platform, with offerings like Rooms, Prospector, Video Hosting, Video Messaging, and AI Avatars—all competing for user attention. Ensuring that Vidyard Home remained focused and purposeful was critical to <span class="text-highlight-blue">avoid it becoming a “dumping ground” </span> for these competing priorities, which could dilute its effectiveness and user impact.</p>
+                
+                <p> After aligning with the Product and dev team, we soon found the goals of our solution:</p>
+                <ul class="list-disc pl-6 text-slate-800 font-semibold mt-3"></ul>
+                    <li class="mb-2">A centralised Home experience where upgraded users don't find confusing anymore</li>
+                    <li class="mb-2">Quick access to Vidyard’s wide-range of products and important features</li>
+                    <li class="mb-2">Personalised recommendations guiding users toward feature adoption</li>
+                    <li class="mb-2">An overview of recent and top team activities to motivate users stay engaged</li>
+                    <li class="mb-10">Additionally, surfacing training resources and marketing materials to support new users</li>
+                </ul>
+
+                <figure class="mb-6 mt-6">
+                  <img src="images/vyblog/visual6.png" alt="Key Visual for the Blog" class="rounded-lg object-cover w-full h-100">
+              </figure>
+            
+                 <!-- Solution -->
+                <h2 class="text-slate-800 text-2xl font-medium mt-10 mb-4 border-t pt-4">Identify opportunities & put ideas in milestones</h2>
+                <p class="mb-4 mt-6">We structured the project into clear milestones, allowing us to iterate and deliver meaningful updates quickly:</p>
+                
+                <div class="border-l-4 border-slate-300 pl-8 mb-20">
+                  <figure class="mb-6 mt-6">
+                    <img src="images/vyblog/visual3.png" alt="Visual representation of Milestone Structure" class="rounded-lg object-cover w-full h-80">
+                  </figure>
+                  <h3 class="text-slate-800 text-xl font-medium mb-2 mt-2">Milestone 1: Accessible CTAs for a Quick Win</h3>
+                  <p class="mb-6">Adding <span class="font-semibold">Call-to-Action (CTA) cards</span> to improve feature discoverability. These cards provided immediate access to Vidyard’s core features, addressing gaps in the MVP where users struggled to explore the platform’s offerings.</p>
+                </div>
+                
+                <div class="border-l-4 border-slate-300 pl-8 mb-20">
+                <figure class="mb-6 mt-6">
+                  <img src="images/vyblog/visual4.png" alt="Key Visual for the Blog" class="rounded-lg object-cover w-full h-80">
+              </figure>
+                <h3 class="text-slate-800 text-xl font-medium mb-2"> Milestone 2: Scaling Across Tiers </h3>
+                <p class="mb-20">Rolling out tailored versions of Vidyard Home for different tiers (Pro/Plus/Enterprise) and roles (Admin, Member). 
+                    This involved accommodating user permissions, team structures, and folder settings, 
+                    ensuring that each tier’s experience felt personalised and relevant.</p>
+                </div>
+
+                <div class="border-l-4 border-slate-300 pl-8 mb-20">
+                    <figure class="mb-6 mt-6">
+                      <img src="images/vyblog/visual5.png" alt="Key Visual for the Blog" class="rounded-lg object-cover w-full h-80">
+                  </figure>
+                <h3 class="text-slate-800 text-xl font-medium mb-2"> Milestone 3: Customised Activation Flows </h3>
+                <p class="mb-20">Streamlining the onboarding process by consolidating checklists and admin pages. 
+                    We aimed for cleaner code, clearer user journeys, and improved feature adoption through intuitive next steps.</p>
+                </div>
+                <!-- Solution -->
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">Results and Impact</h2>
+                <p class="mb-4 mt-6">After 8 weeks of development—and overcoming technical hurdles (Turns out it is not that easy to query who is the team top creator in a 500 people team), we successfully shipped Vidyard Home for all tiers. </p>
+                
+                <section class="bg-gray-50 py-12">
+                    <div class="container mx-auto max-w-screen-md text-center">
+                      <!-- Quote Section -->
+                      <blockquote class="text-2xl text-highlight-blue font-medium italic mb-8">
+                        &ldquo;We loved and were very impressed with the onboarding checklists and the embedded training videos, it was such a good user experience.&rdquo;
+                        <cite class="block mt-4 text-base font-sans text-slate-500"> Key Perry, Senior Manager, Customer Success, Auditboard</cite>
+                      </blockquote>
+                  
+                      <figure class="mt-6">
+                        <img src="images/vyblog/visual7.png" alt="Key Visual for the Blog" class="rounded-lg object-cover w-full h-full">
+                    </figure>
+                      
+                      <!-- Results Section -->
+                      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+                        <div>
+                          <h3 class="text-2xl font-bold text-slate-800 text-left">13K</h3>
+                          <p class="text-sm font-sans text-slate-500 mt-2 text-left">Weekly clicks on the Recent Workspace Component & CTAs respectively</p>
+                        </div>
+                        <div>
+                          <h3 class="text-2xl font-bold text-slate-800 text-left">66%</h3>
+                          <p class="text-sm font-sans text-slate-500 mt-2 text-left">Unique users click on Record CTA when they visit Home</p>
+                        </div>
+                        <div>
+                          <h3 class="text-2xl font-bold text-slate-800 text-left">2x</h3>
+                          <p class="text-sm font-sans text-slate-500 mt-2 text-left">D0 Creation for new users, while Recording Start-to-finish Rate remains 80%</p>
+                        </div>
+                        <div>
+                          <h3 class="text-2xl font-bold text-slate-800 text-left">+3.2%</h3>
+                          <p class="text-sm font-sans text-slate-500 mt-2 text-left">Increase on overall DAU, most lies in Free Workspace</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <p class="mb-4"> Through this process, we bridged gaps in Vidyard’s experience, creating a Home page that not only supports immediate user needs but also drives long-term engagement across our diverse customer base.</p>
+
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="border-t pt-4 mt-8">
+            <ul class="flex flex-wrap space-x-4 text-slate-600 text-sm">
+                <li><a href="mailto:tszhoi1019@gmail.com" class="hover:text-gray-800">tszhoi1019@gmail.com</a></li>
+                <li><a href="https://linkedin.com/in/leetszhoi" class="hover:text-gray-800">Linkedin</a></li>
+                <li><a href="https://www.figma.com/@tszhoi" class="hover:text-gray-800">Figma</a></li>
+                <li><a href="https://medium.com/@tszhoi" class="hover:text-gray-800">Blogs</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
