@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Clock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Flip Card Styling */
+        .flip-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100px;
+            height: 120px;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            background: #f5f5f5;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            perspective: 800px;
+        }
+
+        /* Flip Animation */
+        .flip {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: inherit;
+            backface-visibility: hidden;
+        }
+
+        .flip.animate {
+            animation: flipAnimation 0.5s ease-in-out;
+        }
+
+        @keyframes flipAnimation {
+            0% { transform: rotateX(0); }
+            50% { transform: rotateX(-90deg); }
+            100% { transform: rotateX(0); }
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center min-h-screen text-gray-800 bg-white">
+    <div class="flex space-x-6">
+        <!-- Hours -->
+        <div class="flex flex-col items-center">
+            <div class="flip-card" id="hours">
+                <div class="flip">00</div>
+            </div>
+            <span class="text-sm mt-2">HOURS</span>
+        </div>
+
+        <!-- Minutes -->
+        <div class="flex flex-col items-center">
+            <div class="flip-card" id="minutes">
+                <div class="flip">00</div>
+            </div>
+            <span class="text-sm mt-2">MINUTES</span>
+        </div>
+
+        <!-- Seconds -->
+        <div class="flex flex-col items-center">
+            <div class="flip-card" id="seconds">
+                <div class="flip">00</div>
+            </div>
+            <span class="text-sm mt-2">SECONDS</span>
+        </div>
+    </div>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hktOffset = 8 * 60; // HKT UTC+8
+            const utcNow = now.getTime() + now.getTimezoneOffset() * 60000;
+            const hktNow = new Date(utcNow + hktOffset * 60000);
+
+            const hours = String(hktNow.getHours()).padStart(2, '0');
+            const minutes = String(hktNow.getMinutes()).padStart(2, '0');
+            const seconds = String(hktNow.getSeconds()).padStart(2, '0');
+
+            updateFlipClock("hours", hours);
+            updateFlipClock("minutes", minutes);
+            updateFlipClock("seconds", seconds);
+        }
+
+        function updateFlipClock(id, newValue) {
+            const card = document.getElementById(id);
+            const flip = card.querySelector(".flip");
+
+            if (flip.textContent !== newValue) {
+                flip.classList.add("animate");
+                setTimeout(() => {
+                    flip.textContent = newValue;
+                    flip.classList.remove("animate");
+                }, 500);
+            }
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>

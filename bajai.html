@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bajai</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('windowbkg.webp') center/cover no-repeat;
+            flex-direction: column;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Tailwind font-sans */
+        }
+
+        .counter {
+            position: absolute;
+            top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(30, 41, 59); /* Tailwind text-slate-800 */
+            background: rgb(229, 231, 235); /* Tailwind bg-gray-200 */
+            padding: 10px 20px;
+            border-radius: 2rem; /* Tailwind rounded-lg */
+            transition: background-color 0.3s;
+        }
+  
+        .image {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            cursor: grab;
+            transition: transform 0.1s ease-in-out;
+            user-select: none;
+            opacity: 0;
+            transform: scale(0) rotate(-10deg);
+            animation: spawn 0.3s ease-out forwards;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+
+        .dragging {
+            cursor: grabbing;
+            opacity: 0.7;
+        }
+
+        @keyframes spawn {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(-10deg);
+            }
+            70% {
+                opacity: 1;
+                transform: scale(1.1) rotate(5deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Counter Display -->
+    <div class="counter" id="bajaiCounter"> 1 bajai here 🧸</div>
+
+    <script>
+        const images = ["bajai1.png", "bajai2.png", "bajai3.png", "bajai4.png", "bajai5.png", "bajai6.png"];
+        let bajaiCount = 1; // Start with 1 since bajai1.png is always first
+        const counterElement = document.getElementById("bajaiCounter");
+
+        function getRandomPosition() {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 100);
+            return { x, y };
+        }
+
+        function getRandomImage() {
+            return images[Math.floor(Math.random() * images.length)];
+        }
+
+        function updateCounter() {
+            bajaiCount++;
+            counterElement.textContent = `${bajaiCount} bajai here 🧸 `;
+        }
+
+        function createImage(x, y, isFirst = false) {
+            const img = document.createElement("img");
+            img.src = isFirst ? "bajai1.png" : getRandomImage();
+            img.classList.add("image");
+            img.style.left = `${x}px`;
+            img.style.top = `${y}px`;
+            img.style.position = "absolute";
+            img.draggable = false;
+
+            img.addEventListener("click", (event) => {
+                event.stopPropagation();
+                const { x: newX, y: newY } = getRandomPosition();
+                createImage(newX, newY);
+                updateCounter();
+            });
+
+            makeDraggable(img);
+            document.body.appendChild(img);
+        }
+
+        function makeDraggable(element) {
+            let offsetX = 0, offsetY = 0, isDragging = false;
+
+            element.addEventListener("mousedown", (event) => {
+                isDragging = true;
+                offsetX = event.clientX - element.getBoundingClientRect().left;
+                offsetY = event.clientY - element.getBoundingClientRect().top;
+                element.classList.add("dragging");
+            });
+
+            document.addEventListener("mousemove", (event) => {
+                if (isDragging) {
+                    element.style.left = `${event.clientX - offsetX}px`;
+                    element.style.top = `${event.clientY - offsetY}px`;
+                }
+            });
+
+            document.addEventListener("mouseup", () => {
+                isDragging = false;
+                element.classList.remove("dragging");
+            });
+        }
+
+        // Start with one fixed bajai1.png in the center
+        createImage(window.innerWidth / 2 - 50, window.innerHeight / 2 - 50, true);
+    </script>
+</body>
+</html>
