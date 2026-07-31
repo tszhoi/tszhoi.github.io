@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafting onboarding experience for Multi.app | Lee's Portfolio</title>
+    <meta name="description" content="Improving onboarding for a virtual office macOS app as a product owner/designer — resulting in a >10% boost in the activation rate.">
+    <meta property="og:image" content="images/blog4.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class=" text-slate-800 container mx-auto max-w-screen-md px-4 py-8">
+        <!-- Blog Content -->
+        <article class="mt-40">
+
+            <p class="text-slate-600 text-base mt-2 mb-3">Nov 27, 2022</p>
+            <!-- Blog Title -->
+            <h1 class="text-3xl font-medium leading-snug">Improving onboarding for a virtual office macOS app - boost the activation rate by 10%</h1>
+
+            <!-- Small Header -->
+            <p class="text-slate-600 text-base mb-6 mt-1">My work on improving Remotion (later Multi, acquired by OpenAI)’s onboarding as a product owner/designer, resulting in a &gt;10% boost in the activation rate.</p>
+
+            <!-- Key Visual -->
+            <figure class="mb-6">
+                <img src="images/blog4.png" alt="Key Visual for the Blog" class="rounded-lg object-cover w-full h-100">
+            </figure>
+
+            <!-- Blog Content -->
+            <div class=" text-slate-800 max-w-none">
+                <div class="bg-gray-100 rounded-lg p-4 mb-6 text-slate-700">
+                    💡 This article covers the process of: Project Defining to Problem scoping, Refining solution direction, Design Outcome, and Data tracking for success — highlighting my product thinking and decision making process when tackling complex, ambiguous product building scenarios.
+                </div>
+
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">0. Backstory</h2>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Context</h3>
+                <p class="mb-6">About the time I joined, Remotion made the switch from concierge onboarding (making demo calls) to self-serve onboarding, in order to facilitate product-led growth. Since we no longer had anyone showcasing our product with explanations and walkthroughs to our new users, <span class="text-highlight-blue">the activation and retention rate had been significantly low into 9%.</span></p>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Goal</h3>
+                <blockquote class="border-l-4 border-slate-300 pl-6 text-slate-700 mb-4">
+                    The top-level project goal is to increase the number of teams to hit the activation goal - having 2 calls on 2 separate days.
+                </blockquote>
+                <p class="mb-6 text-slate-600 text-base">*Our CEO Alex and I believed that if a team come back to make call on a second day is a good sign of an activated team - based on the rationale that most people make up their mind about the product on the first day.</p>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Top-level constraints</h3>
+                <ol class="list-decimal pl-6 mb-6 space-y-2">
+                    <li>It’s fundamentally difficult to onboard a social product, a product that requires someone else (your team) to get the value.</li>
+                    <li>With Remotion being on macOS only, people are less willing to make the effort to download and try it.</li>
+                    <li>The user journey covers both the web and macOS, and iterations take longer than just the web.</li>
+                    <li>At the same time, we were still in the process to figure out our positioning and product features - we had to keep updating when the core experience iterated.</li>
+                </ol>
+
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">1. From Defining to Problem Framing</h2>
+                <div class="bg-gray-100 rounded-lg p-4 mb-6 text-slate-700">
+                    💡 TLDR: This section covers how I broke down the product towards our business goal, combined data-driven insights, user feedback and user-centred design analysis to form our problem hypothesis.
+                </div>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Top Level Flow</h3>
+                <p class="mb-6">Before jumping into the wireframe or solution, we had to understand what we were dealing with. We started with mapping out the essential funnel for a new user to be activated on Remotion from start to finish. In the scoping of this project, my goal was to only focus on the <span class="text-highlight-blue">Post-Sign up Activation</span> which includes getting our new sign-ups to try with their co-worker and convert them into our active users.</p>
+                <figure class="mb-6">
+                    <img src="images/blog-multi/img1.png" alt="Flow diagram of steps to activation" class="rounded-lg object-cover w-full">
+                    <figcaption class="text-sm text-slate-500 mt-2">Flow Diagram to demonstrate the steps to get to activation</figcaption>
+                </figure>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Data-driven Context</h3>
+                <p class="mb-4">Then we looked at our data tracking funnel and found out there were a few significant problems that were hurting our activation into a low 10%, including:</p>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>The installation has a 34% drop-off rate</li>
+                    <li>First user install → First convo has a 29% drop off rate</li>
+                    <li>Having a second user sign up is significant towards activation</li>
+                </ul>
+                <figure class="mb-6">
+                    <img src="images/blog-multi/img2.png" alt="Funnel breakdown" class="rounded-lg object-cover w-full">
+                    <figcaption class="text-sm text-slate-500 mt-2">Funnel breakdown, highlighting the significant insight to support our hypotheses.</figcaption>
+                </figure>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Design Research and User Feedback</h3>
+                <p class="mb-6">At the same time, we put the current user journey under the microscope, screenshooting all steps we had, and analysing from a user-centred angle. We highlighted and discussed areas that create friction and impact the activation rate negatively.</p>
+                <p class="mb-6">This part was heavily benefited from having Pedro, our growth and Alexander, our CEO, as they had been gaining a lot of valuable first-handed feedback from our newly onboarded users before I joined the team. With that, we were confident to proceed with highly-convicted feedback, directly from our users.</p>
+                <figure class="mb-6">
+                    <img src="images/blog-multi/img3.png" alt="Analysing the existing onboarding flow" class="rounded-lg object-cover w-full">
+                    <figcaption class="text-sm text-slate-500 mt-2">Analysing the flaws on the existing onboarding flow</figcaption>
+                </figure>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Outcome: Problem Framing</h3>
+                <p class="mb-6">With the combination of both quantitative (funnel data) and qualitative (user interview and journey mapping) findings, we hosted a collaborative jam session, inviting the team to brainstorm some of the hypotheses of what went wrong, and what was missing from the flow and ideas.</p>
+                <p class="mb-4">We narrowed down top-level hypothesis on why we have a low activation rate, including:</p>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">High Friction Funnel</h3>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>Users had to go through unnecessary steps to explore our product, way too long before they have the aha moment</li>
+                    <li>On average users spend more than 5 mins on web onboarding</li>
+                </ul>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Users don’t know how to use Remotion</h3>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>Even after successful installation, users find it hard to navigate and experience our features as we leave our user with an empty dock with no instruction.</li>
+                    <li>The big drop-off from installation → first call is a strong evidence. Theoretically all users should join a call when they were exploring the app.</li>
+                </ul>
+
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">2. Project Brief and Roadmapping</h2>
+                <p class="mb-6">Now we narrowed down the 2 key problems, we were able to build a new design brief around it and began the solution phrase.</p>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Project Brief:</h3>
+                <blockquote class="text-2xl text-highlight-blue font-medium mb-6">
+                    How might we create an easy-to-understand and frictionless onboarding experience, where our new users can experience the value of using Remotion as soon as possible?
+                </blockquote>
+
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">3. Refine Solution Direction</h2>
+                <div class="bg-gray-100 rounded-lg p-4 mb-6 text-slate-700">
+                    💡 TLDR: This section covers how we refined our solution approach before jumping into design and wireframes, including figuring out what is our aha moment and the potential ways ideas.
+                </div>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">What’s our aha Moment?</h3>
+                <p class="mb-6">To start off solution phrase, we had to figure out what is the value of Remotion first, what is the “Aha Moment” when people decided to use Remotion. We talked with a few newly onboarded team creators, and carefully listed out all the delighted moments they felt.</p>
+                <p class="mb-6">We had a strong conviction that <span class="text-highlight-blue">“having a teammate finding me in a room for quick questions or jam”</span> was the way to go. It did not only highlight the unique selling point - where you can easily ping for quick collaborations, it also showcased both product design surfaces, the dock and the call experience.</p>
+                <figure class="mb-6">
+                    <img src="images/blog-multi/img4.png" alt="Aha moment discussion table" class="rounded-lg object-cover w-full">
+                    <figcaption class="text-sm text-slate-500 mt-2">A table was created for discussing what should be the aha moment for our new users.</figcaption>
+                </figure>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Shortest Way to Value</h3>
+                <p class="mb-6">Once we figured out the core WHAT in the experience, we headed down into HOW by creating user flow and low-fidelity prototyping. We considered different ideas, including Download Upfront Approach, Web Mode First Approach, before settling on <span class="text-highlight-blue">Quick Setup on web and Experience on macOS Approach.</span></p>
+                <p class="mb-6">During this phrase, we also took a look on similar products like Around.co, switchboard.app and gather.town. However as our core features only available on macOS, the Web Mode First Approach which is commonly used from them was not a good fit for Remotion.</p>
+                <p class="mb-4">In our approach, we’re able to:</p>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>Bring team creator to macOS and into a call as soon as possible</li>
+                    <li>Leverage our Web Guest Mode for the team joiner (2nd user) to test</li>
+                    <li>Showcase the great call experience on macOS app (Cursor Sharing, Screenshare Drawing, Spotify music sharing)</li>
+                    <li>Showcase the quick collaborative environment the Dock and the Launcher provide and attract 2nd user to download on macOS</li>
+                </ul>
+                <figure class="mb-6">
+                    <img src="images/blog-multi/img5.jpg" alt="Solution flow mapping" class="rounded-lg object-cover w-full">
+                    <figcaption class="text-sm text-slate-500 mt-2">Mapping out the solution flow on how we get new users activated strategically.</figcaption>
+                </figure>
+                <div class="bg-gray-100 rounded-lg p-4 mb-6 text-slate-700">
+                    💡 Meanwhile during this part of the project, through doing extensive user research on the side, we soon realised “Virtual Office with strong online presence” is no longer attractive enough for our product positioning and we decided to switch our focus to “Remarkable Call Experience for Engineers” to compete with industry leaders like Zoom. Luckily the findings and progress of this particular project were still somewhat aligned under the new positioning - we let new users join a room easily and start collaborating with their team under Remotion’s great call experience.
+                </div>
+
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">4. Design Outcome</h2>
+                <p class="mb-6">As a complex onboarding journey across different surfaces (web/ macOS app), I divided it into different phrases with their own goals and purposes and started working on the design.</p>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Web onboarding</h3>
+                <p class="mb-4">A basic and minimal team setup journey to get to the macOS app as soon as possible</p>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>Shorten the web onboarding flow from 7 steps to 4 steps</li>
+                    <li>Remove unnecessary integration prompt and place it at the end of the onboarding flow as it brought no impact here</li>
+                    <li>Integrating features like Domain Capture and window waitlist to minimise distractions</li>
+                </ul>
+                <figure class="mb-6">
+                    <img src="images/blog-multi/img6.jpg" alt="UX flow of the new web onboarding design" class="rounded-lg object-cover w-full">
+                    <figcaption class="text-sm text-slate-500 mt-2">UX flow of the new web onboarding design</figcaption>
+                </figure>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">macOS onboarding</h3>
+                <p class="mb-4">A guided step-by-step tour for our new user to explore the great call experience</p>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>Get users into the default room as one of the first step</li>
+                    <li>Prompt them invite a 2nd user to join via Guest Call Link</li>
+                    <li>Introduce the quick collaborative environment the Launcher and the Dock, two unique surfaces Remotion offers.</li>
+                </ul>
+                <figure class="mb-6">
+                    <img src="images/blog-multi/img7.jpg" alt="macOS onboarding design" class="rounded-lg object-cover w-full">
+                    <figcaption class="text-sm text-slate-500 mt-2">A macOS native design that guides new users from installation, allows permissions to the launcher and joins a call.</figcaption>
+                </figure>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Post-macOS onboarding</h3>
+                <p class="mb-4">A onboarding state for the Dock and the Launcher and a Tips &amp; Tricks section on the Launcher.</p>
+                <ul class="list-disc pl-6 mb-6 space-y-2">
+                    <li>Facilitate business goal: Invite teammates to the app</li>
+                    <li>Helping users understand the best way to use the app (Keyboard shortcut, Calendar Integration)</li>
+                </ul>
+                <figure class="mb-6">
+                    <img src="images/blog-multi/img8.jpg" alt="Tips and tricks section on the launcher" class="rounded-lg object-cover w-full">
+                    <figcaption class="text-sm text-slate-500 mt-2">A tips and tricks section on our launcher to guide new users to set up stuff like Slack integration/ Google Calendar integration.</figcaption>
+                </figure>
+
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">5. Setup Tracking for Success</h2>
+                <h3 class="text-slate-800 text-xl font-medium mb-2">Conditional Data Tracking</h3>
+                <p class="mb-6">To make sure the work was impactful, we not only set up new tracking for the new flow, but we also added different conditioning to the query. We can now easily distinguish the performance of the new user journey without getting distracted by non-targeted users (non-macOS/ non-tech team), which helps us to make more data-driven product decisions and facilitate A/B testing in the future.</p>
+                <figure class="mb-6">
+                    <img src="images/blog-multi/img9.png" alt="Data dashboard with conditions" class="rounded-lg object-cover w-full">
+                    <figcaption class="text-sm text-slate-500 mt-2">In our data dashboard, we were able to add different conditions to make sure we were tracking the right persona. For example, now showing team signed up from Product Hunt since Nov 1st.</figcaption>
+                </figure>
+
+                <h2 class="text-slate-800 text-2xl font-medium mt-8 mb-4 border-t pt-4">6. Shipping and Reflection</h2>
+                <blockquote class="border-l-4 border-slate-300 pl-6 text-slate-700 mb-6">
+                    As a result of this project, our activation rate for our target persona (Engineering team on macOS) had <span class="text-highlight-blue">once gone up to 36% and averaging 25%.</span>
+                </blockquote>
+                <p class="mb-6">I’m delighted to have this amazing opportunity to own this complex project and work with different people to get this done from scratch. Working with Growth to understand our top-of-funnel traffic, keep jamming with our CEO to update on the latest overall positioning changes and roadmapping, and working with both Typescript and macOS engineers to get the design into implementation. There was a lot of ambiguity as well as great collaboration across the team, I’m proud to get involved and bring impact to Remotion’s new users.</p>
+                <p class="mb-6 text-slate-600">Special thanks to Marisa Chan, Viren Mohindra for providing feedback on this article.<br>Written by Tsz Hoi Lee<br>27 Nov 2022</p>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="border-t pt-4 mt-8">
+            <ul class="flex flex-wrap space-x-4 text-slate-600 text-sm">
+                <li><a href="mailto:tszhoi1019@gmail.com" class="hover:text-gray-800">tszhoi1019@gmail.com</a></li>
+                <li><a href="https://linkedin.com/in/leetszhoi" class="hover:text-gray-800">Linkedin</a></li>
+                <li><a href="https://www.figma.com/@tszhoi" class="hover:text-gray-800">Figma</a></li>
+                <li><a href="https://medium.com/@tszhoi" class="hover:text-gray-800">Blogs</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
